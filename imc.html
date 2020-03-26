@@ -8,9 +8,9 @@
 <body>
     <script>
 
-        var nome;
-        var altura;
-        var peso;
+        var nome = prompt("Digite seu nome: ");
+        var altura = prompt("Digite sua altura: ");
+        var peso = prompt("Digite se peso: ");
 
         var imc = peso / (altura * altura);
 
@@ -26,7 +26,7 @@
             document.write(
                 nome + "<h1>Você esta acima do peso</h1>"
             )
-        }else(imc > 30){
+        }else if(imc > 30){
             document.write(
                 nome + "<h1>Você esta Obeso !!!</h1>"
             )

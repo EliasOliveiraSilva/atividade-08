@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Massa Corpórea</title>
+</head>
+<body>
+    <script>
+
+        var nome;
+        var altura;
+        var peso;
+
+        var imc = peso / (altura * altura);
+
+        if(imc < 18.5){
+            document.write(
+                nome + "<h1>Você esta abaixo do peso</h1"
+            )
+        }else if(imc > 18.5 && imc < 25){
+            document.write(
+                nome + "<h1>Você esta no peso normal</h1>"
+            )
+        }else if(imc > 25 && imc < 30){
+            document.write(
+                nome + "<h1>Você esta acima do peso</h1>"
+            )
+        }else(imc > 30){
+            document.write(
+                nome + "<h1>Você esta Obeso !!!</h1>"
+            )
+        }
+
+
+    </script>
+    
+</body>
+</html>
